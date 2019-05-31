@@ -1,0 +1,195 @@
+@import "variable.less";
+
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, h6, i, b,
+textarea, button, input, select, figure, figcaption {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Microsoft Yahei", 'Avenir', Helvetica, Arial, sans-serif;
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: @font-size-base;
+  background: @bg-color-base;
+}
+
+a {
+  text-decoration: none;
+  color: @font-color-base;
+}
+
+.app {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  #head-bar {
+    h2 {
+      left: 1.2rem;
+      right: 1.2rem;
+    }
+    & ~ .main-content {
+      top: @header-height;
+    }
+  }
+  #nav-bar {
+    & ~ .main-content {
+      bottom: @nav-height;
+    }
+    //z-index:1;
+  }
+  .main-content {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: @bg-color-base;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.mint-spinner-snake {
+  clear: both;
+  margin: 0.2rem auto;
+}
+
+.mint-popup {
+  width: 100%;
+}
+
+//switch
+.mint-switch-input:checked + .mint-switch-core {
+  border-color: #63bd63;
+  background-color: #63bd63;
+  &::after {
+    transform: translateX(0.56rem);
+  }
+}
+
+.mint-switch-core {
+  width: 1.04rem;
+  height: 0.49rem;
+  &::before {
+    width: 1rem;
+    height: 0.45rem;
+  }
+  &::after {
+    width: 0.45rem;
+    height: 0.45rem;
+  }
+}
+
+//banner
+.mint-swipe-indicator {
+  background: #fff;
+  opacity: 0.6;
+  margin-right: @padding-body;
+  &.is-active {
+    opacity: 1;
+  }
+}
+
+//router  animation
+//slide-left
+//.child-view {
+//  transition: all .4s cubic-bezier(.55, 0, .1, 1);
+//}
+.slide-left-enter-active, .slide-left-leave-active {
+  opacity: 1;
+  transition: opacity .3s;
+}
+.slide-left-enter, .slide-left-leave-active {
+  opacity: 0;
+}
+//.slide-left-enter, .slide-right-leave-active, .slide-left-leave-active, .slide-right-enter {
+//  opacity: 0;
+//  transform: translateX(2rem);
+//}
+
+
+//share  fade-up
+.fade-up-enter-active, .fade-up-leave-active {
+  transform: translate(0, 0);
+  transition: transform .3s;
+}
+
+.fade-up-enter, .fade-up-leave-active {
+  transform: translate(0, 100%);
+}
+
+// fade-down
+.fade-down-enter-active, .fade-down-leave-active {
+  transform: translate(0, 0);
+  transition: transform .3s;
+}
+
+.fade-down-enter, .fade-down-leave-active {
+  transform: translate(0, -120%);
+}
+
+.dt-content {
+  img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+img[lazy=loaded] {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+//@keyframes fadeIn {
+//  0% {
+//    opacity: 0;
+//  }
+//  100% {
+//    opacity: 1;
+//  }
+//}
+.describe{
+  line-height: 0.6rem;
+  padding: 0.1rem;
+  img{
+    max-width: 100%!important;
+    text-align: center;
+    display: block;
+    margin: 0.1rem auto 0;
+  }
+}
+//富文本编辑器
+.ql-toolbar.ql-snow{
+    display: none!important;
+  }
+.quillWrapper{
+  padding:0 0.1rem;
+  width: 100%;
+}
+.ql-container.ql-snow{
+  border: none!important;
+}
+.isgood{
+  background: url("../assets/img/good.png") no-repeat right center;
+  background-size: 12%;
+}
+@import "header.less";
+@import "navbar.less";
+@import "form.less";
+@import "hot.less";
+@import "list.less";
+@import "button.less";
+@import "search.less";
+@import "banner.less";
+@import "article.less";

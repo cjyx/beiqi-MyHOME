@@ -1,0 +1,27 @@
+@import "../../../less/variable.less";
+.main-content{
+  background: #fff;
+}
+.form-group{
+  img{
+    width:1.5rem;
+    height:1.5rem;
+    border-radius: 50%;
+  }
+  &>a {
+    flex: auto;
+    padding:0 @padding-body;
+    font-size: @font-size-base;
+    input[type="text"] {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  &:last-child{
+    border-bottom: none;
+  }
+}
+.form-address{
+  border-top: 0.1rem solid @border-color-base;
+}
+

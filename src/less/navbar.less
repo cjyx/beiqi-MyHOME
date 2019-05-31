@@ -1,0 +1,37 @@
+@import "variable.less";
+
+/*底部菜单*/
+#nav-bar {
+  height: @nav-height;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background: @bg-color-white;
+  .nav-item {
+    flex: auto;
+    a {
+      flex: auto;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      span {
+        color: @font-color-weak;
+        font-size: @font-size-base;
+      }
+      i {
+        font-size: @font-size-base*1.5;
+        color: @font-color-weak;
+      }
+      &.router-link-active {
+        span, i {
+          color: @font-color-base;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,242 @@
+@import "../../../less/variable.less";
+.main-content{
+  background: @bg-color-white;
+  .btn-tab{
+    background: @bg-color-white;
+    border-bottom: 0.2rem solid @border-color-base;
+  }
+  .screen{
+    border-bottom: 1px solid @border-color-base;
+    background: @bg-color-white;
+    display: flex;
+    text-align: center;
+    line-height: 44px;
+    height: 44px;
+    color: @font-color-weak;
+    position: relative;
+    span{
+      flex: 1;
+    }
+    i{
+      font-size: 6px;
+    }
+    .scree-list{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: @bg-color-white;
+      li{
+        border-bottom: 1px solid @border-color-base;
+        text-align: center;
+      }
+      .change-bg{
+        background: @border-color-base;
+      }
+
+    }
+  }
+  .icon-che{
+    color: @font-color-base;
+  }
+  .cash-coupon{
+    font-size: 0.35rem;
+  }
+  .cash-coupon-center{
+    margin-bottom: 0.1rem!important;
+  }
+  .cash-coupon-bottom{
+    color: @font-color-weak;
+  }
+  .circle{
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    background: #ff3636;
+    color: @font-color-white;
+    border-radius: 50%;
+  }
+  .integral-car{
+    position: fixed;
+    right: 0.2rem;
+    bottom: 3rem;
+    border-radius: 50%;
+    z-index: 999;
+    i{
+      color: #a7a7a7;
+      font-size: 0.8rem;
+    }
+    span{
+      .circle;
+      top: -0.1rem;
+      right: -0.1rem;
+    }
+  }
+  .integral-submit{
+    border-top: 1px solid @border-color-base;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: @bg-color-white;
+    display: flex;
+    .join-car{
+      position: relative;
+      i{
+        font-size: 30px;
+        padding: 0.4rem 0 0 0.4rem;
+        display: inline-block;
+      }
+      span{
+        .circle;
+        top: 0.3rem;
+        left: 0.8rem;
+      }
+    }
+    .integral-submit-btn{
+      width: 76%;
+    }
+    .btn-a{
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  //goodsdetial
+  .good-detial-content{
+    padding: @padding-body;
+    line-height: 0.4rem;
+    .content-num{
+      color: @bg-color-header;
+    }
+    span{
+      color: @font-color-weak;
+    }
+    .top{
+      width: 100%;
+      min-height: 0.8rem;
+      position: relative;
+      h3{
+        font-size: 0.35rem;
+        line-height: 0.6rem;
+      }
+      .like-content{
+        position: absolute;
+        top: -0.2rem;
+        left: 24%;
+        p{
+          border-radius: 0.3rem;
+          padding: 0 1rem;
+        }
+      }
+    }
+    .caption-group{
+      margin-top: 0.2rem;
+    }
+  }
+  .top{
+    padding-left: 0.4rem;
+    line-height: 0.8rem;
+  }
+  .goods-comment{
+    border-bottom: 1px solid @bg-color-base;
+    padding: @padding-body;
+    .goods-comment-top{
+      display: flex;
+      line-height: 0.8rem;
+      img{
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+      }
+      .top-left{
+        flex: auto;
+        text-indent: 0.2rem;
+        font-size: @font-size-big;
+      }
+      .top-right{
+        color: @font-color-weak;
+      }
+    }
+    p{
+      margin-left: 1rem;
+      line-height: 0.5rem;
+      color: @font-color-weak;
+    }
+    .comment-img{
+      padding-left: 1rem;
+      img{
+        width: 2rem;
+        height: 2rem;
+        margin: 0 0.02rem;
+      }
+    }
+  }
+  .goods-comment:last-child{
+    border-bottom: none;
+  }
+//success
+.success-content{
+  text-align: center;
+  img{
+    width: 2rem;
+    padding: 1.4rem 0 0.4rem;
+  }
+  h3{
+    line-height: 1rem;
+  }
+  a{
+    display: inline-block;
+  }
+  button{
+    color: @font-color-weak;
+    padding: 0.2rem 0.6rem;
+  }
+}
+  //coupon-content
+  .coupon-content{
+    padding: @padding-body;
+    margin-bottom: 1.4rem;
+    div{
+      border-top: 1px solid @border-color-base;
+      padding-top: 0.2rem;
+      h3{
+        line-height: 0.6rem;
+        margin-top: 0.1rem;
+      }
+      p{
+        color: @font-color-weak;
+        line-height: 0.4rem;
+      }
+    }
+  }
+  .color-title{
+    color: @font-color-weak;
+  }
+  .coupon-submit{
+    text-align: right;
+    span{
+      line-height: 1.4rem;
+      width: 100%;
+      color: @font-color-weak;
+    }
+    button{
+      margin: 0.3rem 0.2rem;
+    }
+  }
+}
+.top-content{
+  padding-top: 0!important;
+}
+.submit-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: @bg-color-white;
+  button.disabled-btn {
+    background: #666;
+  }
+}

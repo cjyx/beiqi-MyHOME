@@ -1,0 +1,140 @@
+@import "../../../less/variable.less";
+
+.main-content {
+  background: #fff;
+  .sign-content {
+    background: @bg-color-header url("../../../assets/img/sign-1.png") bottom left no-repeat;
+    background-size: 100% auto ;
+    padding: 0.1rem 0 0.1rem;
+    .sign-btn {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+      div {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: @bg-color-white;
+        border-radius: 50%;
+        border: 0.15rem solid #dc5d57;
+        padding: 0.15rem;
+        h2 {
+          border-radius: 50%;
+          height: 100%;
+          border: 1px solid @bg-color-header;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: @bg-color-header;
+        }
+      }
+    }
+    .sign-day {
+      display: flex;
+      span {
+        flex: 1;
+        text-align: center;
+        color: @font-color-white;
+        line-height: 0.5rem;
+        h2 {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  .rule {
+    display: flex;
+    background: @bg-color-base;
+    padding: @padding-body;
+    border-bottom: 1px solid #ddd;
+    justify-content: flex-end;
+    i{
+      color: @font-color-base ;
+    }
+
+  }
+  .month {
+    width: 100%;
+    background: #fff;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #dcdcdc;
+      li {
+        color: #333;
+        font-size: 0.25rem;
+        text-transform: uppercase;
+        &.arrow {
+          padding: 0.2rem;
+        }
+        &.year-month {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          span{
+            font-size:0.28rem;
+          }
+        }
+      }
+    }
+  }
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    color: #333;
+    justify-content: space-around;
+    li {
+      display: inline-block;
+      width: 13.6%;
+      text-align: center;
+    }
+  }
+  .days {
+    background: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      width: 14.2%;
+      text-align: center;
+      font-size: 0.25rem;
+      color: #000;
+      padding: 0.1rem 0;
+      span{
+        width: 0.56rem;
+        height: 0.56rem;
+        text-align: center;
+        line-height:0.56rem;
+        display: inline-block;
+        border-radius: 50%;
+        &.active {
+          background: #EA6E30;
+          color: #fff;
+        }
+        &.current{
+          background: @bg-color-base;
+        }
+        &.signNum{
+          color: #EA6E30;
+          border-radius:0;
+          i{
+            color: #EA6E30;
+            width: 0.56rem;
+            height: 0.56rem;
+            line-height: 0.56rem;
+            border:1px solid #EA6E30;
+            border-radius: 50%;
+            display: inline-block;
+          }
+        }
+        &.other-month {
+          color: gainsboro;
+        }
+      }
+    }
+  }
+}

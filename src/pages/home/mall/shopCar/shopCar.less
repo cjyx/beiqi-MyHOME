@@ -1,0 +1,77 @@
+@import "../../../../less/variable.less";
+.group-list{
+  margin-bottom: 1.4rem;
+  li{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    .option{
+      padding:0 @padding-body*2 0 0;
+    }
+    .info{
+      flex:auto;
+      .goods-list{
+        p{
+          display: flex;
+          flex-flow: row nowrap;
+          border:1px solid @border-color-base;
+          span{
+            width: 0.5rem;
+            height: 0.45rem;
+            line-height: 0.4rem;
+            background: @font-color-white;
+            font-size:0.4rem;
+            text-align: center;
+          }
+          i{
+            height: 0.45rem;
+            line-height: 0.45rem;
+            padding: 0 @padding-body*2;
+            border-left:1px solid @border-color-base;
+            border-right:1px solid @border-color-base;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.bottom-btn{
+  z-index: 999;
+  background: @bg-color-white;
+  border-top:1px solid @border-color-base;
+  height: 1.4rem;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  &>div{
+    flex: auto;
+    font-size: @font-size-big;
+    display: flex;
+    .right{
+      flex: auto;
+      flex-flow: column;
+      margin-left:0.3rem;
+      p{
+        line-height: 0.4rem;
+        &:last-child{
+          font-size: @font-size-base;
+        }
+      }
+
+    }
+  }
+  button{
+    height: 0.7rem;
+    width: 2.2rem;
+    margin: 0 0.15rem;
+    padding: 0;
+  }
+}
+.line{
+  text-decoration: line-through;
+}

@@ -1,0 +1,71 @@
+@import "../../../less/variable.less";
+.main-content {
+  background: @bg-color-white;
+  .name{
+    display: flex;
+    line-height: 0.8rem;
+    margin-bottom: 0.2rem;
+    div{
+      border-bottom: 1px solid @bg-color-base;
+      display: flex;
+      flex:auto;
+    }
+    i{
+      color: #fC5d17;
+    }
+    h3{
+      flex: auto;
+    }
+    span{
+      color: @font-color-weak;
+    }
+  }
+  .content{
+    margin:0.2rem 0 0.1rem 0.3rem;
+    h3{
+      font-weight: normal;
+      line-height: 0.6rem;
+    }
+    .group{
+      overflow: hidden;
+      line-height: 0.4rem;
+      margin-bottom: 0.1rem;
+      &>div{
+        margin: 0.02rem 0.1rem 0 0;
+        border:1px solid @font-color-base;
+        width: 0.3rem;
+        height: 0.3rem;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 0.3rem;
+        float: left;
+      }
+    }
+  }
+
+}
+
+
+.prompt{
+  line-height: 0.8rem;
+  background: @bg-color-white;
+  display: flex;
+  position: relative;
+  background: #fffbed;
+  z-index: 9;
+  top:45px;
+  color: #EA6E30;
+  padding: 0 @padding-body;
+}
+.map{
+  //height: 7rem!important;
+}
+.caption-group{
+  position: fixed;
+  bottom: 0;
+  max-height:45%;
+  right:0.15rem;
+  left:0.15rem;
+  background: @bg-color-white;
+  overflow-y:scroll;
+}

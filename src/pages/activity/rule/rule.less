@@ -1,0 +1,46 @@
+@import "../../../less/variable.less";
+.main-content{
+  background: @bg-color-white;
+  overflow: auto;
+  .rule-header{
+    line-height:0.5rem;
+    padding: 0.2rem;
+    p{
+      color: #888;
+    }
+    h3{
+      font-size: 0.3rem;
+    }
+  }
+  .rule-top{
+    display: flex;
+    padding: 0 0.2rem;
+    //border-bottom: 1px solid @border-color-base;
+    border-top:1px solid @border-color-base;
+    line-height: 0.8rem;
+    align-items: center;
+    img{
+      width: 0.48rem;
+      height: 0.48rem;
+    }
+    img:nth-child(3){
+      width: 0.4rem;
+      height: 0.4rem;
+    }
+    span{
+      flex: auto;
+      padding-left: 0.1rem;
+      font-weight: bolder;
+    }
+  }
+  .last-bor{
+    border-bottom: 1px solid @border-color-base;
+  }
+  .rule-bottom{
+    background: @bg-color-base;
+    img{
+      width: 100%;
+    }
+  }
+
+}

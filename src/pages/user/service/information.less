@@ -1,0 +1,26 @@
+@import "../../../less/variable.less";
+.main-content{
+  background: #fff;
+}
+.set-list{
+  padding: 0 @padding-body;
+  li{
+    border-bottom: 1px solid @border-color-base;
+    a{
+      padding:0.3rem 0;
+      display: flex;
+      flex-flow: row nowrap;
+      span{
+        //flex: 1;
+      }
+      input{
+        //flex: auto;
+        //text-align: right;
+        &:disabled{
+          background: @bg-color-white;
+        }
+      }
+    }
+  }
+}
+

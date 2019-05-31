@@ -1,0 +1,51 @@
+@import "variable.less";
+.main-content{
+  background: @bg-color-white;
+}
+.srach-btn{
+  display: flex;
+  padding:@padding-body;
+  height:50px;
+  position: relative;
+  background: @bg-color-white;
+  input{
+    flex: auto;
+    border: 1px solid @border-color-base;
+    margin-right: 0.4rem;
+    border-radius: 0.1rem;
+    padding: 0 @padding-body;
+  }
+  button{
+    color: @font-color-white;
+    background: @bg-color-btn;
+    padding: 0 0.3rem;
+    border-radius: 0.1rem;
+    display: flex;
+    align-items: center;
+    line-height: 0.26rem;
+  }
+  //.btn{
+  //  background: #D3322A;
+  //  padding: 0;
+  //}
+}
+.tabs-1{
+  overflow: auto;
+}
+
+
+/* tab-list */
+.btn-tab{
+  background: @bg-color-base;
+  line-height: @header-height;
+  height:@header-height;
+  display: flex;
+  button{
+    background: none;
+    flex: auto;
+    margin: 0 0.4rem;
+    &.active{
+      border-bottom: 1px solid @bg-color-header;
+    }
+  }
+}

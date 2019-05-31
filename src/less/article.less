@@ -1,0 +1,221 @@
+@import "variable.less";
+//detial star
+@bor-radius:0.1rem;
+.main-content{
+  background: @bg-color-white;
+}
+.detial-content{
+  padding:@padding-body;
+  line-height: 0.46rem;
+  h3,title{
+    line-height: 0.6rem;
+    word-break: break-all;
+  }
+  .title{
+    color: @font-color-weak;
+    padding: 0.1rem 0;
+    span{
+      margin-right: 0.4rem;
+    }
+  }
+  img{
+    width: 100%;
+    height: 4rem;
+  }
+}
+.like-content{
+  display: flex;
+  margin: 0.3rem 0;
+  p{
+    flex: auto;
+    margin: 0 0.4rem;
+    text-align: center;
+    border: 1px solid #9C9C9C;
+    border-radius: 0.4rem;
+    line-height: 0.6rem;
+    width: 40%;
+    i{
+      margin: 0.1rem;
+      position: relative;
+      top: 0.04rem;
+    }
+  }
+  .change{
+    color: #D3322A;
+    border: 1px solid #D3322A;
+  }
+}
+.unComment{
+  padding: @padding-body 0;
+  text-align: center;
+  font-size: @font-size-big;
+}
+.comment-list{
+  border-bottom: 0.1rem solid @bg-color-base;
+  padding: @padding-body;
+  .comment-list-top{
+    display: flex;
+    line-height: 0.8rem;
+    img{
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+    }
+    .top-left{
+      flex: auto;
+      color: #476b9b;
+      text-indent: 0.2rem;
+    }
+    .top-right{
+      color: @font-color-weak;
+    }
+  }
+  p{
+    margin-left: 1rem;
+    line-height: 0.5rem;
+  }
+}
+.share-content{
+  background: @bg-color-base;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .share{
+    display: flex;
+  }
+  li{
+    flex: auto;
+    text-align: center;
+    padding: 0.2rem;
+    color: @font-color-weak;
+    i{
+      font-size: 0.8rem;
+    }
+    span{
+      font-size: 0.2rem;
+    }
+    .icon-wechart,.icon-friends{
+      color: #3fb135;
+    }
+    .icon-qq{
+      color:#4cafea;
+    }
+    .icon-qzone{
+      color:#eed03e
+    }
+  }
+  p{
+    line-height: 0.8rem;
+    text-align: center;
+    background: #fafafa;
+  }
+}
+//share
+.condition{
+  position: absolute;
+  background: #fff;
+  z-index: 99;
+  right: 0;
+  right: 0.2rem;
+  top: 1.98rem;
+  width: 2rem;
+  padding: 0.1rem 0.2rem;
+  border-radius: @bor-radius;
+  li{
+    line-height: 0.6rem;
+    border-bottom: 1px solid @border-color-base;
+    position: relative;
+    img{
+      position: absolute;
+      top: -0.31rem;
+      right: 0.1rem;
+    }
+  }
+  li:last-child{
+    border-bottom: none;
+  }
+  .change{
+    color: #D3322A;
+    background: url("../assets/img/radio.png") no-repeat right center;
+  }
+}
+.condition-detial{
+  top:0;
+  li{
+    height:0.7rem;
+    line-height: 0.7rem;
+  }
+  .icon-share{
+    font-size: 12px;
+  }
+  .share-left{
+    margin-left: 0.03rem;
+  }
+  .icon-collect{
+    position: relative;
+    top: 0.02rem;
+  }
+  .collection{
+    i,span{
+      color: #D3322A;
+    }
+  }
+}
+.commentBtn{
+  display: inline-block;
+  width: 100%;
+}
+//comment star
+.comment-content{
+  padding: @padding-body;
+  .comment-title{
+    line-height: 1rem;
+  }
+  textarea{
+    width: 100%;
+    background: #fafafa;
+    padding:0.1rem;
+    border: 1px solid @border-color-base;
+  }
+  .comment-list-title{
+    display: flex;
+    p{
+      flex: 1;
+      border-bottom: 1px solid @border-color-base;
+    }
+    span{
+      flex: 1;
+      text-align: center;
+      position: relative;
+      top: 0.16rem;
+      color: @font-color-weak;
+      font-size: 0.3rem;
+    }
+  }
+}
+.comment-list-bottom{
+  display: flex;
+  margin-top: 0.2rem;
+  line-height: 0.36rem;
+  color: @font-color-weak;
+  .comment-content-bottom{
+    color: @font-color-base;
+    padding: @padding-body*0.5 0;
+    & + p{
+      span{
+        font-size: 0.24rem;
+        &.comment-delete{
+          color: #0086b3;
+          margin-left: 0.2rem;
+        }
+      }
+    }
+  }
+  img{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 0.1rem;
+    margin-right: 0.2rem;
+  }
+}

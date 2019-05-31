@@ -1,0 +1,124 @@
+@import  "../../../less/variable.less";
+.main-content{
+  background: @bg-color-white;
+}
+.station-btn{
+  text-align: center;
+  button{
+    margin-top: 0.4rem;
+  }
+  p{
+    color: @font-color-weak;
+    line-height: 0.6rem;
+  }
+}
+.db-phone{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index:1000;
+  width: 100%;
+  text-align: center;
+  &>div{
+    background: #f8f8f8;
+    p{
+      margin: 0 auto;
+      padding:@padding-body*1.5 0;
+      font-size: @font-size-bigger;
+      width:80%;
+      border-bottom: 1px solid @border-color-base;
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+  button{
+    margin-top: 2px;;
+    background: #f8f8f8;
+    width: 100%;
+    padding:@padding-body*1.5 0;
+    font-size: @font-size-bigger;
+  }
+}
+.db-citys{
+  background: #f8f8f8;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top:@header-height;
+  left:0;right:0;
+  z-index: 999;
+  height:5rem;
+  ul{
+    overflow: auto;
+    line-height: 0.6rem;
+  }
+  .citys-left{
+    width: 25%;
+    flex-direction: column;
+    li{
+      padding: 0.08rem 0;
+      &.active{
+        background: @bg-color-base;
+      }
+    }
+  }
+  .citys-right{
+    height:5rem;
+    flex: auto;
+    background: @bg-color-base;
+    li{
+      padding: 0.07rem 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+  }
+}
+.mint-tab-item{
+  padding: 0;
+}
+//rescue
+.r-list{
+  display: flex;
+  span{
+    flex: auto;
+  }
+  i{
+    color: #333;
+  }
+}
+.rescue-title{
+  height: @header-height;
+  display: flex;
+  align-items: center;
+  padding: 0 @padding-body;
+  border-bottom: 6px solid @border-color-base;
+  &>div{
+    flex: auto;
+    span:first-child{
+      color: @font-color-weak;
+      margin-right: 0.1rem;
+    }
+  }
+  i{
+    color:#1b8afd;
+    font-size: 0.4rem;
+  }
+}
+.rescue-list-content{
+  overflow: auto;
+}
+//station
+.form-content{
+  background:@bg-color-white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  text-align: center;
+  button{
+    width: 50%;
+    margin:@padding-body*2 auto;
+  }
+}

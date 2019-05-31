@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>北汽客户APP下载</title>
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="email=no"/>
+  <style type="text/css">
+    /*.share {*/
+    /*display: flex;*/
+    /*flex-flow: column nowrap;*/
+    /*align-content: center;*/
+    /*padding: 10px 0;*/
+    /*align-items: center;*/
+    /*flex: 1;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+    /*}*/
+
+    /*.share input {*/
+    /*border: 1px solid #ADADAD;*/
+    /*padding: 5px;*/
+    /*width: 80%;*/
+    /*text-align: center;*/
+    /*}*/
+
+    .share p {
+      color: #999;
+    }
+
+    .btn {
+      position: fixed;
+      top:50%;
+      left:20%;
+      background: #D3322A;
+      padding: 10px 0;
+      color: #fff;
+      width: 60%;
+      text-align: center;
+      display: none;
+      text-decoration: none;
+    }
+  </style>
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="share">
+  <!--<h3>邀请码为</h3>-->
+  <!--<input id="code" type="text" readonly="readonly" value="1S2444-45AGF-57498FD-GV">-->
+  <!--<p>长按复制邀请码</p>-->
+  <p class="msgChart" style="text-align: right">
+    <img src="./right.png" alt="">
+  </p>
+
+  <p class="msgChart" style="text-align: center">
+    请点击右上角“：”，点击“在浏览器打开”，<br/>
+    选中浏览器，打开下载页面，点击“下载APP"按钮
+  </p>
+
+  <section id="downBtn">
+    <p style="text-align: center">
+      <a class="btn" id="android" href="http://dev.auto-link.com.cn:81/xs-h5/download/sale.apk">下载APP</a>
+    </p>
+    <p style="text-align: center">
+      <a class="btn" id="ios">去AppStore下载</a>
+    </p>
+  </section>
+
+
+  <script type="text/javascript">
+    function getQueryString(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null)return unescape(r[2]);
+      return null;
+    }
+
+
+    /**但短是否微信浏览器*/
+    function isWeChart() {
+      var ua = window.navigator.userAgent.toLowerCase();
+      if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+        return true;
+      }
+      return false;
+    }
+
+
+    /*获取邀请码*/
+    var code = getQueryString('code');
+    if (code != null) {
+      $('#code').val(code);
+    }
+    /*判断浏览器类型*/
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if (isiOS) {
+      $('#android').hide();
+      $('#ios').show();
+    } else {
+      $('#android').show();
+      $('#ios').hide();
+    }
+
+
+    $(function () {
+      if (isWeChart()) {
+        $('#downBtn').hide();
+      }else{
+        $('.msgChart').hide();
+      }
+    })
+
+
+  </script>
+</div>
+</body>
+</html>

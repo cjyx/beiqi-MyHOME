@@ -1,0 +1,41 @@
+@import "../../less/form.less";
+.main-content{
+  background: #fff;
+  padding: 0 @padding-body*4;
+  .return{
+    position: absolute;
+    left:0.25rem;
+    top:0.25rem;
+  }
+  .logo{
+    padding: 2.2rem 0 2rem;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    img{
+      &:first-child{
+        max-width: 75%;
+        //margin-bottom:0.6rem;
+      }
+      max-width: 85%;
+    }
+  }
+  .form-group {
+    label{
+      min-width:inherit;
+      text-align: left;
+    }
+  }
+  button{
+    width: 100%;
+  }
+  .detail{
+    display: flex;
+    justify-content: space-between;
+    a{
+      color:@font-color-weak;
+    }
+  }
+}
+
+

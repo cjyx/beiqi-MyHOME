@@ -1,0 +1,73 @@
+@import "../../../less/variable.less";
+.main-content {
+  background: @bg-color-white;
+  .service-list{
+    padding: @padding-body;
+    li{
+      div{
+        border:1px solid @border-color-base;
+        border-radius: 0.1rem;
+        margin-bottom: 0.15rem;
+        padding: @padding-body;
+      }
+      h3{
+        padding-bottom: 0.1rem;
+      }
+      p{
+        line-height: 0.5rem;
+        display: flex;
+        align-items: center;
+        span{
+          flex: auto;
+        }
+        a{
+          color: @font-color-name;
+        }
+      }
+    }
+  }
+}
+.star{
+  background: @bg-color-white;
+  padding: 0.2rem;
+  position: fixed;
+  bottom: 0;
+  z-index:1000;
+  width: 100%;
+  line-height: 0.6rem;
+  text-align: center;
+  color: @font-color-weak;
+  max-height: 10rem;
+  overflow: auto;
+  i{
+    font-size: 0.6rem;
+    margin: 0 0.1rem;
+  }
+  .star-color{
+    color: #ffc107;
+  }
+  p{
+    width: 100%;
+  }
+  .explain{
+    display: flex;
+    flex-wrap: wrap;
+    span{
+      border: 1px solid @border-color-base;
+      display: inline-block;
+      border-radius: 0.4rem;
+      width: 30%;
+      margin: 0.2rem 1%;
+      height: 0.6rem;
+      font-size: 0.23rem;
+    }
+    .bor{
+      border-color: @bg-color-header;
+    }
+  }
+  input[type=text]{
+    background: @bg-color-white;
+    border: 1px solid @bg-color-header;
+    color: @font-color-weak;
+  }
+}

@@ -1,0 +1,53 @@
+@import "variable.less";
+
+/*顶部菜单*/
+#head-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: @header-height;
+  background: @bg-color-header;
+  color: @font-color-white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0 0.1rem;
+  h2 {
+    font-size: @font-size-bigger;
+    line-height: @header-height;
+    height: @header-height;
+    position: fixed;
+    top: 0;
+    left: 1.5rem;
+    right: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 66%;
+    }
+  }
+  .head-left, .head-right {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: @font-color-white;
+      font-size: @font-size-big;
+    }
+    &.head-left {
+      a {
+        padding: 0.1rem;
+      }
+    }
+    &.head-right {
+      a {
+        padding: 0.1rem;
+      }
+    }
+  }
+}

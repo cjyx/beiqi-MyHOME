@@ -1,0 +1,53 @@
+@import "../../../../less/variable.less";
+.address{
+  background: url(../../../../assets/img/order-1.jpg) repeat-x bottom left, @bg-color-white;
+  background-size: auto 0.15rem;
+  padding: @padding-body*2 @padding-body @padding-body*3;
+  display:flex;
+  align-items: center;
+  div{
+    flex: auto ;
+    h3{
+      font-size: @font-size-big;
+      margin-bottom: @padding-body;
+      span{
+        font-weight: normal;
+        margin-left: @padding-body;
+      }
+    }
+  }
+  &>i{
+    font-size: @font-size-base*2;
+    color: @font-color-weak;
+  }
+}
+.group-list{
+  margin: @padding-body 0 1.4rem;
+}
+
+.bottom-btn{
+  background: @bg-color-white;
+  border-top:1px solid @border-color-base;
+  height: 1.4rem;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  div{
+    flex: auto;
+    text-align: right;
+    font-size: @font-size-big;
+    color: @font-color-weak;
+  }
+  button{
+    height: 0.7rem;
+    width: 2.2rem;
+    margin: 0 0.15rem;
+    padding: 0;
+  }
+}
+.line{
+  text-decoration: line-through;
+}

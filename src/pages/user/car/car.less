@@ -1,0 +1,140 @@
+@import "../../../less/variable.less";
+
+.main-content {
+  background: @bg-color-white;
+}
+
+/*我的车辆*/
+.car-content {
+  padding: 0 @padding-body;
+  .group {
+    border-bottom: 0.08rem solid @border-color-base;
+    padding: @padding-body;
+    background: @bg-color-white;
+    display: flex;
+    margin-top: 0.2rem;
+    flex-flow: row nowrap;
+    align-items: center;
+    .info {
+      flex: auto;
+      padding-right: @padding-body;
+      div {
+        padding: @padding-body 0;
+        display: flex;
+        h3 {
+          padding-right: 0.3rem;
+          font-size: 0.32rem;
+        }
+        p{
+          flex: auto;
+          text-align: right;
+          color: @font-color-weak;
+          padding:0;
+        }
+      }
+      p {
+        padding-bottom: @padding-body;
+      }
+      a {
+        color:@bg-color-header;
+      }
+      .list{
+        border-top:1px solid @border-color-base;
+        padding: 0;
+        .option{
+          flex: auto;
+        }
+        .list-btn{
+          a{
+            border:1px solid @border-color-base;
+            padding: 0.1rem 0.2rem;
+            color: @font-color-weak;
+            margin: 0 0.1rem;
+          }
+        }
+      }
+    }
+    i {
+      font-size: 1.3rem;
+      color: @bg-color-btn;
+    }
+    .btn {
+      min-width: 1.5rem;
+      background: @bg-color-btn;
+    }
+    .carNum{
+      border:1px solid @bg-color-header;
+      padding: 0.05rem;
+      color: @bg-color-header;
+    }
+    .carNumUn{
+      border:1px solid @border-color-base;
+      padding: 0.05rem;
+      color: @border-color-base;
+    }
+  }
+}
+
+/*车辆认证*/
+.form-content {
+  .form-group {
+    p {
+      flex: auto;
+      padding: 0 @padding-body;
+      font-size: @font-size-base;
+      min-height: 0.6rem;
+      line-height: 0.6rem;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex: auto;
+      img {
+        width: 0.9rem;
+        height: 0.9rem;
+        padding-bottom: @padding-body;
+        position: relative;
+      }
+    }
+    & > img {
+      width: 3rem;
+      height: 2rem;
+      border-radius: 0.15rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+.bigImg{
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 45% auto 0;
+  border-radius:0.3rem;
+}
+.mask-preview{
+  background:rgba(0, 0, 0, 0.1)!important;
+}
+.upload-img{
+  //flex: auto;
+  margin-left: auto;
+  margin-right: 0.1rem;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  color: #5a5a5a;
+  background: #ccc;
+  line-height: 0.6rem;
+}
+.up-pic{
+  text-align: center;
+  padding-left: 0.2rem;
+  img{
+    width: 100%!important;
+    height: auto!important;
+  }
+}
+.drive-img{
+  margin: 16% auto 0;
+}

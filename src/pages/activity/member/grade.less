@@ -1,0 +1,207 @@
+@import "../../../less/variable.less";
+.main-content{
+  background: @bg-color-white;
+  .grade-header{
+    background: @bg-color-header url("../../../assets/img/grade.png") no-repeat center -0.2rem;
+    position: relative;
+    background-size: 100%;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left:48%;
+      display: block;
+      width:0;
+      height: 0;
+      border-left:10px solid transparent;
+      border-right:10px solid transparent;
+      border-bottom:10px solid #fff;
+    }
+    p{
+      padding-bottom: 0.4rem;
+      height: 0.8rem;
+      text-align: center;
+      color: @font-color-white;
+    }
+  }
+  .group{
+    height: 2.8rem;
+    .group-swipe{
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      img{
+        width:1.5rem;
+        max-height: 1.5rem;
+        transition: all 0.25s ease;
+      }
+      h4{
+        align-items: center;
+        line-height: @font-size-base*2;
+        color: @font-color-white;
+        font-weight: normal;
+        transition: all 0.25s ease;
+      }
+      .currentImg{
+        border-radius: 50%;
+      }
+      &.current{
+        img{
+          width:1.9rem;
+          max-height:1.76rem;
+          //border-radius: 50%;
+        }
+        h4{
+          font-size: @font-size-bigger;
+        }
+      }
+    }
+  }
+  .swiper-slide {
+    width: 40%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .title{
+    padding: @padding-body*1.5 0;
+    margin: 0 @padding-body;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    border-bottom: 1px solid @border-color-base;
+    &:before{
+      content: "";
+      height: 0.3rem;
+      width:0.06rem;
+      background: #FE5D17;
+      margin-right: @padding-body;
+    }
+  }
+  .content{
+    &.content-first{
+      border-bottom: 0.1rem solid @border-color-base;
+      .condition-top{
+        line-height: 1rem;
+        padding-left: 0.3rem;
+        span{
+          color: @bg-color-header;
+        }
+      }
+    }
+    .grade-info{
+      display: flex;
+      flex-flow: row wrap;
+      margin: @padding-body;
+      .list-row{
+        width: 50%;
+        &>div{
+          width: 94%;
+          display: flex;
+          flex-flow:column;
+          background: #fafafa;
+          border-radius: 0.1rem;
+          margin:0 3%;
+          h3{
+            padding: @padding-body*1.2 @padding-body;
+            font-weight: normal;
+            background: #e0e0e0;
+            border-radius: 0.1rem 0.1rem 0 0;
+          }
+          .row{
+            padding: @padding-body;
+            .progress-title{
+              display: flex;
+              span{
+                flex: auto;
+              }
+            }
+            .progress{
+              height: 0.15rem;
+              border-radius: 0.1rem;
+              background: #e0e0e0;
+              overflow: visible;
+              margin: 0.15rem 0;
+              .bar{
+                position: relative;
+                border-radius: 0.1rem;
+                height: 100%;
+                max-width:  100%!important;
+                background: @bg-color-activity;
+                transition: width .6s ease;
+                animation: animate-positive 2s;
+                overflow: hidden;
+              }
+              @keyframes animate-positive {
+                0%{ width: 0; }
+              }
+            }
+          }
+          &.active{
+            h3{
+              background: #ffd63f;
+            }
+          }
+        }
+      }
+    }
+    .group-list{
+      li{
+        border-bottom: 1px solid @border-color-base;
+        padding: 0.2rem 0;
+        a{
+          align-items: flex-start;
+          h3{
+            margin-bottom: 0.1rem;
+          }
+          img{
+            height: auto;
+            border-radius: 50%;
+            flex: 1;
+            width: 1rem;
+            min-width: 1rem;
+          }
+        }
+
+      }
+    }
+  }
+  .prompt{
+    line-height:0.5rem;
+    padding: @padding-body;
+    color:@font-color-weak;
+    font-size: 0.28rem;
+  }
+  .rule-list{
+    li{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: @padding-body;
+      color:@font-color-weak;
+      &:first-child{
+        border-bottom: 1px dashed @border-color-base;
+        font-weight: bold;
+        font-size: @font-size-bigger;
+        color:@font-color-base;
+      }
+      p{
+        width: 30%;
+      }
+      span{
+        width: 70%;
+        line-height: 0.5rem;
+      }
+    }
+  }
+}

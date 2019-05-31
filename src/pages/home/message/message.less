@@ -1,0 +1,36 @@
+@import "../../../less/variable.less";
+.message-item{
+  text-align: center;
+  padding-top: @padding-body*2.5;
+  &>div{
+    background: @bg-color-white;
+    margin: 0.2rem;
+    border:1px solid #e0e0e0;
+    text-align: left;
+    padding: @padding-body;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+      flex: auto;
+      p{
+        color: @font-color-weak;
+        margin: 0.1rem 0;
+      }
+    }
+    i{
+      color: @font-color-weak;
+      font-size: @font-size-big;
+    }
+  }
+  span{
+    color: @font-color-weak;
+  }
+}
+.add-birthday{
+  display: flex;
+  align-items: center;
+  input{
+    line-height: 0.8rem;
+  }
+}

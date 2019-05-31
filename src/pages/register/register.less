@@ -1,0 +1,47 @@
+@import "../../less/form.less";
+.main-content{
+  background: #fff;
+}
+.form-group {
+  .like{
+    flex-flow: row;
+    flex: auto;
+    .option{
+      width: 33%;
+      float: left;
+      padding-right: 0;
+    }
+  }
+  p{
+    flex: auto;
+    padding:0 @padding-body;
+    font-size: @font-size-base;
+    min-height: 0.6rem;
+    line-height: 0.6rem;
+  }
+  .upload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: auto;
+    img{
+      width:0.9rem;
+      height:0.9rem;
+      padding-bottom: @padding-body;
+      position: relative;
+    }
+  }
+  &>img{
+    width:3rem;
+    height:2rem;
+    border-radius: 0.15rem;
+    margin-right: 0.5rem;
+  }
+}
+.clause{
+  text-align: center;
+  a{
+    color: @bg-color-header;
+  }
+}

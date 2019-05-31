@@ -1,0 +1,122 @@
+@import "../../../less/variable.less";
+.main-content,.btn-tab{
+  background: @bg-color-white;
+}
+.btn-tab{
+  display: flex;
+  span{
+    flex: 1;
+    text-align: center;
+    margin: 0 0.4rem;
+    a{
+      width: 100%;
+      display: inline-block;
+    }
+  }
+  span:nth-child(1):after{
+    content: "|";
+    color:@font-color-weak;
+    position: absolute;
+    left: 50%;
+  }
+  .tab-bor{
+    border-bottom: 1px solid @bg-color-header;
+  }
+  button{
+    font-size: @font-size-big;
+  }
+}
+.detail{
+  border-top: 0.15rem solid @bg-color-base;
+  .import{
+    background:url(../../../assets/img/referral-1.png) no-repeat left bottom #f0f0f0;
+    background-size: 100% auto;
+    color: @bg-color-header;
+    padding: @padding-body 1.5rem 0.5rem @padding-body;
+    font-size: @font-size-big;
+    line-height: 0.4rem;
+    margin: @padding-body*2;
+    span{
+      font-weight: bold;
+    }
+  }
+  .prompt{
+    padding:0 @padding-body*2;
+    line-height: 0.4rem;
+    color: @font-color-weak;
+  }
+  .title{
+    padding: @padding-body*1.5;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    border-bottom: 1px solid @border-color-base;
+    font-weight: normal;
+    &:before{
+      content: "";
+      height: 0.3rem;
+      width:0.06rem;
+      background: #FE5D17;
+      margin-right: @padding-body;
+    }
+  }
+  .referralTwo{
+    border-bottom: 0.15rem solid @bg-color-base;
+    padding:0 @padding-body*2;
+    margin-bottom: @padding-body*2;
+    .import{
+      margin: @padding-body*2 0;
+    }
+    img{
+      width: 100%;
+      margin: @padding-body 0;
+    }
+  }
+}
+.myReferral{
+  padding:0 @padding-body 0;
+  .content{
+    background: #fff;
+    padding: 0 0.15rem;
+    line-height: 0.5rem;
+    margin: 0.15rem 0;
+    .bottom{
+      display: flex;
+      padding: @padding-body 0;
+      p{
+        margin-left:0.2rem;
+        &:nth-child(1){
+          flex: auto;
+          margin: 0;
+          color: @font-color-weak;
+        }
+      }
+    }
+    .myDetail{
+      border-top: 1px solid @border-color-base;
+      padding: @padding-body 0;
+      b{
+        font-size: 0.32rem;
+        margin-right:0.2rem;
+      }
+    }
+    .bor{
+      border-top: 1px solid @border-color-base;
+      justify-content: flex-end;
+      button{
+        padding: 0.1rem 0.4rem;
+        border-radius: 0;
+      }
+    }
+  }
+}
+.bigImg{
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 45% auto 0;
+  border-radius:0.3rem;
+}
+.mask-preview{
+  background:rgba(0, 0, 0, 0.1)!important;
+}

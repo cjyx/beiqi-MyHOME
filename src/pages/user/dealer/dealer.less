@@ -1,0 +1,96 @@
+@import "../../../less/variable.less";
+.main-content{
+  background: #fff;
+}
+.caption-group {
+  margin-bottom:@nav-height;
+  .add-btn{
+    button{
+      padding:  0 @padding-body;
+      background: none;
+      &:disabled{
+        color: @font-color-base;
+      }
+    }
+  }
+}
+.db-citys{
+  background: #f8f8f8;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top:@header-height;
+  left:0;right:0;
+  z-index: 999;
+  height:5rem;
+  ul{
+    overflow: auto;
+    line-height: 0.6rem;
+  }
+  .citys-left{
+    width: 25%;
+    flex-direction: column;
+    li{
+      padding: 0.05rem 0;
+      &.active{
+        background: @bg-color-base;
+      }
+    }
+  }
+  .citys-right{
+    height:5rem;
+    flex: auto;
+    background: @bg-color-base;
+    li{
+      padding: 0.04rem 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+  }
+}
+.db-phone{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index:1000;
+  width: 100%;
+  text-align: center;
+  &>div{
+    background: #f8f8f8;
+    p{
+      margin: 0 auto;
+      padding:@padding-body*1.5 0;
+      font-size: @font-size-bigger;
+      width:80%;
+      border-bottom: 1px solid @border-color-base;
+    }
+  }
+
+  .bor-last{
+    border-bottom: none;
+  }
+  button{
+    margin-top: 2px;;
+    background: #f8f8f8;
+    width: 100%;
+    padding:@padding-body*1.5 0;
+    font-size: @font-size-bigger;
+  }
+}
+.operate{
+  position: fixed;
+  left:0;
+  bottom:0;
+  right:0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: @nav-height;
+  a,&>div{
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+

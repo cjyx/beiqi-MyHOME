@@ -1,0 +1,65 @@
+@import  "variable.less";
+.mark-item{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.mark-item-header{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 44px;
+  left: 0;
+  z-index: 999;
+}
+.mark-item-score{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 132px;
+  left: 0;
+  z-index: 999;
+}
+.share-content{
+  background: @bg-color-base;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .share{
+    display: flex;
+  }
+  li{
+    flex: auto;
+    text-align: center;
+    padding: 0.2rem;
+    color: @font-color-weak;
+    i{
+      font-size: 0.8rem;
+    }
+    span{
+      font-size: 0.2rem;
+    }
+    .icon-wechart,.icon-friends{
+      color: #3fb135;
+    }
+    .icon-qq{
+      color:#4cafea;
+    }
+    .icon-qzone{
+      color:#eed03e
+    }
+  }
+  p{
+    line-height: 0.8rem;
+    text-align: center;
+    background: #fafafa;
+  }
+}
+

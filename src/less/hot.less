@@ -1,0 +1,66 @@
+@import "variable.less";
+
+/*热门推荐公共样式*/
+.hot-list {
+  margin-bottom: 0.1rem;
+  background: @bg-color-white;
+  padding: 0 @padding-body;
+  display: flex;
+  flex-flow: column nowrap;
+  .hot-hd {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid @border-color-base;
+    padding: 0.25rem 0;
+    h4 {
+      border-left: 2px solid #FE5D17;
+      padding-left: @padding-body;
+      flex: 1;
+    }
+    .icon-more {
+      font-size: 0.25rem;
+    }
+  }
+  .hot-bd {
+    li {
+      flex: auto;
+      border-bottom: 1px solid @border-color-base;
+      a {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: @padding-body 0;
+        img {
+          width: 1.5rem;
+          height: 1.3rem;
+        }
+        .content {
+          flex: auto;
+          h4, .desc {
+            padding: @padding-body;
+          }
+          .desc {
+            flex: auto;
+            display: flex;
+            color: @font-color-weak;
+            span {
+              flex: 1;
+            }
+          }
+        }
+      }
+      &:last-child {
+        border: 0;
+      }
+    }
+  }
+  .hot-fd {
+    border-top: 1px solid @border-color-base;
+    text-align: center;
+    padding: @padding-body*1.5 0;
+
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../../less/variable.less";
+.main-content{
+  background: #fff;
+}
+.integral-content{
+  padding:0 @padding-body;
+  .all{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: @padding-body*4 0;
+    background: @bg-color-white;
+    h1{
+      color: @bg-color-header;
+      font-size: 0.8rem;
+      padding-bottom: @padding-body;
+    }
+    h3{
+      color: @bg-color-header;
+    }
+  }
+  .list{
+    li{
+      border-bottom: 1px solid @border-color-base;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      padding: @padding-body 0;
+      div{
+        flex: auto;
+        p{
+          font-size: @font-size-bigger;
+          padding-bottom: @padding-body;
+        }
+        span{
+          color: @font-color-weak;
+        }
+      }
+      &>span{
+        color: @bg-color-header;
+        font-size: @font-size-bigger;
+      }
+    }
+  }
+}

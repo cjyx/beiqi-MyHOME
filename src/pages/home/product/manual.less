@@ -1,0 +1,43 @@
+@import  "../../../less/variable.less";
+.main-content{
+  display: flex;
+  .btn-tab{
+    width: 20%;
+    display: block;
+    p{
+      border-bottom: 1px solid #e0e0e0;
+      border-left:0.06rem solid @bg-color-base;
+      margin: 0;
+      line-height: 0.4rem;
+      text-align: center;
+      padding: 0.2rem 0 0.1rem 0;
+      img{
+        width: 0.8rem;
+        height: 0.8rem;
+      }
+    }
+    .tab_active{
+      border-left: 0.06rem solid @bg-color-header;
+      background: @bg-color-white;
+      color: @bg-color-header;
+    }
+  }
+  .tab{
+    width: 80%;
+    background: @bg-color-white;
+  }
+  .tab_right{
+    width: 100%;
+    line-height: 0.4rem;
+    li{
+      width: 32.5%;
+      display: inline-block;
+      text-align: center;
+      padding: 0.2rem 0 0.1rem 0;
+      color: @font-color-weak;
+      img{
+        width: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "../../../../less/variable.less";
+.main-content{
+  background: @bg-color-white;
+  .create-group{
+    padding: @padding-body;
+    input{
+      border-bottom: 1px solid @border-color-base;
+      width: 100%;
+      height: 0.6rem;
+      line-height: 0.6rem;
+    }
+    .eval-content{
+      padding: @padding-body 0;
+      display: flex;
+      textarea{
+        flex: auto;
+        resize: none;
+        line-height: 0.4rem;
+      }
+    }
+    p{
+      margin-top: 0.2rem;
+      i{
+        font-size: 1.4rem;
+        color: @font-color-weak;
+      }
+    }
+
+  }
+  .vue-html5-editor{
+    display: flex;
+    flex: auto;
+    resize: none;
+    border:none;
+    align-items: flex-start;
+  }
+  .form-create{
+    .form-group{
+      font-size:0.28rem;
+      padding: 0.1rem;
+      &>label{
+        min-width: 14%;
+        line-height: 0.6rem;
+        height:0.6rem;
+      }
+      &>input{
+        font-size:0.28rem;
+        line-height: 0.6rem;
+        height: 0.6rem;
+      }
+      .headImg{
+        flex: auto;
+        img{
+          max-width: 1.4rem;
+          max-height: 1.2rem;
+        }
+      }
+    }
+  }
+}
+.up-img{
+  img{
+    width: 1.4rem;
+    .img{
+      border: 1px solid @border-color-base;
+    }
+  }
+}
+textarea{
+  width: 100%;
+}
+.upload-img{
+  display: flex;
+  flex-wrap: wrap;
+  li{
+    width: 31.33%;
+    height:2.5rem;
+    margin:0 0 2% 2%;
+    position: relative;
+    img{
+      width:100%;
+      height:100%;
+    }
+    i{
+      position: absolute;
+      right:-0.15rem;
+      top:-0.15rem;
+      background: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      width:0.38rem;
+      height:0.38rem;
+      text-align: center;
+      line-height:0.35rem;
+      font-size: @font-size-base*1.1;
+      color:@font-color-white;
+      font-weight: bold;
+    }
+  }
+}
+

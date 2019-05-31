@@ -1,0 +1,104 @@
+@import "../../../less/variable.less";
+.main-content {
+  background: @bg-color-white;
+  .experience{
+    background: @bg-color-base;
+    padding: @padding-body*1.5;
+    .usable{
+      background: @bg-color-header;
+      border-radius: 0.2rem;
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      flex-flow: column;
+      justify-content: center;
+      line-height: 0.7rem;
+      color: @font-color-white;
+      p{
+        font-size: @font-size-bigger;
+      }
+      h1{
+        margin: @padding-body 0;
+      }
+      .btn{
+        border:1px solid #fff;
+        width: 80%;
+        text-align: center;
+        padding: 0;
+        border-radius: 0;
+      }
+    }
+  }
+  .list{
+    padding: @padding-body;
+    li{
+      border-bottom: 1px solid @border-color-base;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      padding: @padding-body 0;
+      div{
+        flex: auto;
+        p{
+          font-size: @font-size-bigger;
+          padding-bottom: @padding-body;
+        }
+        span{
+          color: @font-color-weak;
+        }
+      }
+      &>span{
+        color: @bg-color-header;
+        font-size: @font-size-bigger;
+      }
+    }
+  }
+  .title{
+    padding: @padding-body*1.5 0;
+    margin: 0 @padding-body;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    border-bottom: 1px solid @border-color-base;
+    &:before{
+      content: "";
+      height: 0.3rem;
+      width:0.06rem;
+      background: #FE5D17;
+      margin-right: @padding-body;
+    }
+  }
+  .content{
+    padding: 0 @padding-body;
+    .prompt{
+      line-height:0.5rem;
+      padding: @padding-body 0;
+      color:@font-color-weak;
+      font-size: 0.28rem;
+    }
+    .rule-list{
+      li{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: @padding-body 0;
+        color:@font-color-weak;
+        &:first-child{
+          border-bottom: 1px dashed @border-color-base;
+          font-weight: bold;
+          font-size: @font-size-bigger;
+          color:@font-color-base;
+        }
+        p{
+          width: 30%;
+        }
+        span{
+          width: 70%;
+          line-height: 0.5rem;
+          display: flex;
+          flex-flow: column;
+        }
+      }
+    }
+  }
+}
